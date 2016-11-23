@@ -1,20 +1,18 @@
 <html>
   <head>
 	<title>CNS CW2 Applet</title>
+	<link type="text/css" rel="stylesheet" href="applet.css"/>
   </head>
 	<body>		
 		<!-- Disclaimer -->
 		<center>
-			<div style="background-color:white;">
+			<div style="background-color:#AFAFAF; border-style:solid; border-width:3px; border-color:#727272; padding: 4em;">
+			<h1 style="color: red;">Disclaimer</h1>
 				In order to run this applet in your local machine, please download the below certificates and import them to your "Signer CA" group in the JAVA configuration panel.
 				<!-- Buttons to download the required certificates -->
 				<p>
-				<form method="get" action="certificates/cns_applet.der">
-					<button type="submit">Click here to download the Applet certificate</button>
-				</form>
-				<form method="get" action="certificates/jce_cert.der">
-					<button type="submit">Click here to download the BC certificate</button>
-				</form>
+				<a href="certificates/cns_applet.der" class="downloadButton">Trusted Applet certificate</a>
+				<a href="certificates/jce_cert.der" class="downloadButton">Trusted BC certificate</a>				
 			</div>
 		</center>
 		<br><p>
@@ -28,3 +26,5 @@
 		</center>
 	</body>
 </html>
+
+
