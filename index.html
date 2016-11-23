@@ -2,20 +2,23 @@
   <head>
 	<title>CNS CW2 Applet</title>
   </head>
-	<body bgcolor="#222222">
-		<!-- Buttons to download the required certificates -->
-		<form method="get" action="certificates/cns_applet.der">
-			<button type="submit">Click here to download the Applet certificate</button>
-		</form>
-		<form method="get" action="certificates/jce_cert.der">
-			<button type="submit">Click here to download the BC certificate</button>
-		</form>
+	<body>		
 		<!-- Disclaimer -->
-		<div>
-			In order to run this applet in your local machine, please download the above certificates and import them to your "Signer CA" group in the JAVA configuration panel.
-		</div>
-		<br><p>
 		<center>
+			<div style="background-color:white;">
+				In order to run this applet in your local machine, please download the below certificates and import them to your "Signer CA" group in the JAVA configuration panel.
+				<!-- Buttons to download the required certificates -->
+				<p>
+				<form method="get" action="certificates/cns_applet.der">
+					<button type="submit">Click here to download the Applet certificate</button>
+				</form>
+				<form method="get" action="certificates/jce_cert.der">
+					<button type="submit">Click here to download the BC certificate</button>
+				</form>
+			</div>
+		</center>
+		<br><p>
+		<center bgcolor="#222222">
 			<!-- Applet -->
 			<applet archive="log4j-1.2.17.jar, CertApplet.jar, bcpg-jdk15on-155.jar, bcprov-ext-jdk15on-155.jar" code="CertApplet.class" 
 			codebase="." width="1024" height="768"> 
